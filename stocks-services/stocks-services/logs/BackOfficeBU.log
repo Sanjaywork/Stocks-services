@@ -1,0 +1,481 @@
+2019-02-17 16:09:43.718  INFO 9840 --- [main] com.bdc.bo.BusinessUnitApplication       : Starting BusinessUnitApplication on aspirenav255 with PID 9840 (E:\BDC-BO-BusinessUnit\target\classes started by dhamotharan.murugan in E:\BDC-BO-BusinessUnit)
+2019-02-17 16:09:43.718  INFO 9840 --- [main] com.bdc.bo.BusinessUnitApplication       : No active profile set, falling back to default profiles: default
+2019-02-17 16:09:43.749  INFO 9840 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@971d0d8: startup date [Sun Feb 17 16:09:43 IST 2019]; root of context hierarchy
+2019-02-17 16:09:44.749  INFO 9840 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff3e059a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-17 16:09:44.968  INFO 9840 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-17 16:09:44.968  INFO 9840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-17 16:09:44.983  INFO 9840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-17 16:09:45.061  INFO 9840 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-17 16:09:45.061  INFO 9840 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1312 ms
+2019-02-17 16:09:45.249  INFO 9840 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-17 16:09:45.249  INFO 9840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2019-02-17 16:09:45.249  INFO 9840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-17 16:09:45.249  INFO 9840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-17 16:09:45.249  INFO 9840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-17 16:09:45.249  INFO 9840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-17 16:09:45.249  INFO 9840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-02-17 16:09:45.249  INFO 9840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-02-17 16:10:20.773 ERROR 9840 --- [main] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+
+java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:489) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) [tomcat-jdbc-8.5.23.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) [spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) [spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326) [spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366) [spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$68c469ba.CGLIB$jpaVendorAdapter$4(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$68c469ba$$FastClassBySpringCGLIB$$2a615673.invoke(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$68c469ba.jpaVendorAdapter(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_77]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_77]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_77]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_77]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.bdc.bo.BusinessUnitApplication.main(BusinessUnitApplication.java:15) [classes/:na]
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:439) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:454) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:693) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:251) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	... 77 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_77]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_77]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_77]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_77]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_77]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_77]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_77]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_77]
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:149) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:405) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	... 82 common frames omitted
+
+2019-02-17 16:10:22.352  WARN 9840 --- [main] o.s.b.a.orm.jpa.DatabaseLookup           : Unable to determine jdbc url from datasource
+
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$68c469ba.CGLIB$jpaVendorAdapter$4(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$68c469ba$$FastClassBySpringCGLIB$$2a615673.invoke(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$68c469ba.jpaVendorAdapter(<generated>) [spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_77]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_77]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_77]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_77]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.bdc.bo.BusinessUnitApplication.main(BusinessUnitApplication.java:15) [classes/:na]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 61 common frames omitted
+Caused by: java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:489) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) ~[spring-jdbc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 62 common frames omitted
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:439) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:454) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:693) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:251) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	... 77 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_77]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_77]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_77]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_77]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_77]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_77]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_77]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_77]
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:149) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:405) ~[ojdbc6-11.2.0.3.jar:11.2.0.4.0]
+	... 82 common frames omitted
+
+2019-02-17 16:10:41.445  INFO 9840 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-02-17 16:10:41.460  INFO 9840 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-17 16:10:41.498  INFO 9840 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-17 16:10:41.498  INFO 9840 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-17 16:10:41.498  INFO 9840 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-17 16:10:41.514  INFO 9840 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-17 16:10:41.592  INFO 9840 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-02-17 16:10:43.414  WARN 9840 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:10:43.425  WARN 9840 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:10:43.425  WARN 9840 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:10:43.425  WARN 9840 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:10:43.425  WARN 9840 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:10:43.425  WARN 9840 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:10:43.425  WARN 9840 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:10:43.425  WARN 9840 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:10:43.899  INFO 9840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-17 16:10:44.045  INFO 9840 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-02-17 16:10:44.467  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/messageshistory/{messageId}],methods=[GET]}" onto public java.util.List<com.bdc.bo.entity.MessageHistoryEntity> com.bdc.bo.controller.MessagingController.getAllMessageHistory(long)
+2019-02-17 16:10:44.475  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/messagesopenheaders],methods=[GET]}" onto public java.util.List<com.bdc.bo.entity.MessageHeaderEntity> com.bdc.bo.controller.MessagingController.getAllOpensHeaders() throws com.bdc.bo.exception.MessageHeaderNotFoundException
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/createmessageshistory],methods=[POST]}" onto public com.bdc.bo.entity.MessageHistoryEntity com.bdc.bo.controller.MessagingController.createUserMessageHistory(com.bdc.bo.model.MessageHistory)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/createmessagesheader],methods=[POST]}" onto public com.bdc.bo.entity.MessageHistoryEntity com.bdc.bo.controller.MessagingController.createMessageHeader(com.bdc.bo.model.MessageHistory)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/messagesheaders/{customerid}],methods=[GET]}" onto public java.util.List<com.bdc.bo.entity.MessageHeaderEntity> com.bdc.bo.controller.MessagingController.getAllmessagesheaders(java.lang.String)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/adminresponse],methods=[POST]}" onto public com.bdc.bo.entity.MessageHistoryEntity com.bdc.bo.controller.MessagingController.createAdminMessagehistory(com.bdc.bo.model.AdminResponse)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getallproducts],methods=[GET]}" onto public java.util.List<com.bdc.bo.model.ProductRole> com.bdc.bo.controller.UserController.getAllProductRole()
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/productroles/{ProductroleId}],methods=[GET]}" onto public com.bdc.bo.model.ProductRole com.bdc.bo.controller.UserController.getAllProductRoles(java.lang.Long)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/createproductroles],methods=[POST]}" onto public com.bdc.bo.model.ProductRole com.bdc.bo.controller.UserController.createProductroles(com.bdc.bo.model.ProductRoleListsDto)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listofproducts],methods=[GET]}" onto public java.util.List<com.bdc.bo.model.ListofProducts> com.bdc.bo.controller.UserController.getAllListofProducts()
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/levels],methods=[PUT]}" onto public com.bdc.bo.model.Levels com.bdc.bo.controller.UserController.updateLevels(com.bdc.bo.model.Levels)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getbaseroles],methods=[GET]}" onto public java.util.List<com.bdc.bo.model.Baserole> com.bdc.bo.controller.UserController.findbaseroleeAll()
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/levels],methods=[GET]}" onto public java.util.List<com.bdc.bo.model.Levels> com.bdc.bo.controller.UserController.getAllLevels()
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usertypes],methods=[GET]}" onto public java.util.List<com.bdc.bo.model.UserType> com.bdc.bo.controller.UserController.getAllUserTypes()
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.bdc.bo.entity.Userregistration> com.bdc.bo.controller.UserController.getAllUsers()
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{customerId}],methods=[GET]}" onto public com.bdc.bo.entity.Userregistration com.bdc.bo.controller.UserController.getUserById(java.lang.Long)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/levels/{levelId}],methods=[GET]}" onto public com.bdc.bo.model.Levels com.bdc.bo.controller.UserController.GetlevelsById(java.lang.Long)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public com.bdc.bo.entity.Userregistration com.bdc.bo.controller.UserController.updateUser(com.bdc.bo.entity.Userregistration)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/createusers/baserole/{baseroleId}/usertype/{usertypeId}/productroles/userlevels],methods=[POST]}" onto public com.bdc.bo.entity.Userregistration com.bdc.bo.controller.UserController.createUsers(java.lang.Long,java.lang.Long,com.bdc.bo.model.UserRegisterationDto)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/levels],methods=[POST]}" onto public com.bdc.bo.model.Levels com.bdc.bo.controller.UserController.createLevels(com.bdc.bo.model.Levels)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-17 16:10:44.476  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-17 16:10:44.632  INFO 9840 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:10:44.742  INFO 9840 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-17 16:10:44.883  INFO 9840 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@971d0d8: startup date [Sun Feb 17 16:09:43 IST 2019]; root of context hierarchy
+2019-02-17 16:10:44.930  INFO 9840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-17 16:10:44.930  INFO 9840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-17 16:10:44.945  INFO 9840 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customizedResponseEntityExceptionHandler
+2019-02-17 16:10:44.966  INFO 9840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-17 16:10:45.186  INFO 9840 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-17 16:10:45.186  INFO 9840 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-02-17 16:10:45.233  INFO 9840 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-02-17 16:10:45.233  INFO 9840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-17 16:10:45.249  INFO 9840 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-17 16:10:45.289  INFO 9840 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-17 16:10:45.513  INFO 9840 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-02-17 16:10:45.516  INFO 9840 --- [main] com.bdc.bo.BusinessUnitApplication       : Started BusinessUnitApplication in 61.954 seconds (JVM running for 62.406)
+2019-02-17 16:12:06.638  INFO 9840 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-02-17 16:12:06.653  INFO 9840 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@971d0d8: startup date [Sun Feb 17 16:09:43 IST 2019]; root of context hierarchy
+2019-02-17 16:12:06.654  INFO 9840 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-02-17 16:12:06.654  INFO 9840 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2019-02-17 16:12:06.654  INFO 9840 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-02-17 16:12:06.654  INFO 9840 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-17 16:12:13.685  INFO 6784 --- [main] com.bdc.bo.BusinessUnitApplication       : Starting BusinessUnitApplication on aspirenav255 with PID 6784 (E:\BDC-BO-BusinessUnit\target\classes started by dhamotharan.murugan in E:\BDC-BO-BusinessUnit)
+2019-02-17 16:12:13.685  INFO 6784 --- [main] com.bdc.bo.BusinessUnitApplication       : No active profile set, falling back to default profiles: default
+2019-02-17 16:12:13.716  INFO 6784 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@971d0d8: startup date [Sun Feb 17 16:12:13 IST 2019]; root of context hierarchy
+2019-02-17 16:12:14.669  INFO 6784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d62c493] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-17 16:12:14.898  INFO 6784 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-17 16:12:14.898  INFO 6784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-17 16:12:14.898  INFO 6784 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-17 16:12:14.997  INFO 6784 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-17 16:12:14.997  INFO 6784 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1281 ms
+2019-02-17 16:12:15.169  INFO 6784 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-17 16:12:15.169  INFO 6784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2019-02-17 16:12:15.169  INFO 6784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-17 16:12:15.169  INFO 6784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-17 16:12:15.169  INFO 6784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-17 16:12:15.169  INFO 6784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-17 16:12:15.169  INFO 6784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-02-17 16:12:15.169  INFO 6784 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-02-17 16:12:39.075  INFO 6784 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-02-17 16:12:39.083  INFO 6784 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-17 16:12:39.114  INFO 6784 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-17 16:12:39.114  INFO 6784 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-17 16:12:39.114  INFO 6784 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-17 16:12:39.145  INFO 6784 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-17 16:12:39.223  INFO 6784 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-02-17 16:12:40.964  WARN 6784 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:12:40.965  WARN 6784 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:12:40.965  WARN 6784 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:12:40.965  WARN 6784 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:12:40.965  WARN 6784 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:12:40.965  WARN 6784 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:12:40.965  WARN 6784 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:12:40.965  WARN 6784 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2019-02-17 16:12:41.349  INFO 6784 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-17 16:12:41.498  INFO 6784 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/createmessagesheader],methods=[POST]}" onto public com.bdc.bo.entity.MessageHistoryEntity com.bdc.bo.controller.MessagingController.createMessageHeader(com.bdc.bo.model.MessageHistory)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/messagesopenheaders],methods=[GET]}" onto public java.util.List<com.bdc.bo.entity.MessageHeaderEntity> com.bdc.bo.controller.MessagingController.getAllOpensHeaders() throws com.bdc.bo.exception.MessageHeaderNotFoundException
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/messagesheaders/{customerid}],methods=[GET]}" onto public java.util.List<com.bdc.bo.entity.MessageHeaderEntity> com.bdc.bo.controller.MessagingController.getAllmessagesheaders(java.lang.String)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/messageshistory/{messageId}],methods=[GET]}" onto public java.util.List<com.bdc.bo.entity.MessageHistoryEntity> com.bdc.bo.controller.MessagingController.getAllMessageHistory(long)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/createmessageshistory],methods=[POST]}" onto public com.bdc.bo.entity.MessageHistoryEntity com.bdc.bo.controller.MessagingController.createUserMessageHistory(com.bdc.bo.model.MessageHistory)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/adminresponse],methods=[POST]}" onto public com.bdc.bo.entity.MessageHistoryEntity com.bdc.bo.controller.MessagingController.createAdminMessagehistory(com.bdc.bo.model.AdminResponse)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/createproductroles],methods=[POST]}" onto public com.bdc.bo.model.ProductRole com.bdc.bo.controller.UserController.createProductroles(com.bdc.bo.model.ProductRoleListsDto)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/productroles/{ProductroleId}],methods=[GET]}" onto public com.bdc.bo.model.ProductRole com.bdc.bo.controller.UserController.getAllProductRoles(java.lang.Long)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getallproducts],methods=[GET]}" onto public java.util.List<com.bdc.bo.model.ProductRole> com.bdc.bo.controller.UserController.getAllProductRole()
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/listofproducts],methods=[GET]}" onto public java.util.List<com.bdc.bo.model.ListofProducts> com.bdc.bo.controller.UserController.getAllListofProducts()
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.bdc.bo.entity.Userregistration> com.bdc.bo.controller.UserController.getAllUsers()
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{customerId}],methods=[GET]}" onto public com.bdc.bo.entity.Userregistration com.bdc.bo.controller.UserController.getUserById(java.lang.Long)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getbaseroles],methods=[GET]}" onto public java.util.List<com.bdc.bo.model.Baserole> com.bdc.bo.controller.UserController.findbaseroleeAll()
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/levels],methods=[GET]}" onto public java.util.List<com.bdc.bo.model.Levels> com.bdc.bo.controller.UserController.getAllLevels()
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/levels],methods=[POST]}" onto public com.bdc.bo.model.Levels com.bdc.bo.controller.UserController.createLevels(com.bdc.bo.model.Levels)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/createusers/baserole/{baseroleId}/usertype/{usertypeId}/productroles/userlevels],methods=[POST]}" onto public com.bdc.bo.entity.Userregistration com.bdc.bo.controller.UserController.createUsers(java.lang.Long,java.lang.Long,com.bdc.bo.model.UserRegisterationDto)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public com.bdc.bo.entity.Userregistration com.bdc.bo.controller.UserController.updateUser(com.bdc.bo.entity.Userregistration)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/levels/{levelId}],methods=[GET]}" onto public com.bdc.bo.model.Levels com.bdc.bo.controller.UserController.GetlevelsById(java.lang.Long)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/levels],methods=[PUT]}" onto public com.bdc.bo.model.Levels com.bdc.bo.controller.UserController.updateLevels(com.bdc.bo.model.Levels)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/usertypes],methods=[GET]}" onto public java.util.List<com.bdc.bo.model.UserType> com.bdc.bo.controller.UserController.getAllUserTypes()
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-17 16:12:41.913  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-17 16:12:42.060  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:12:42.075  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-02-17 16:12:42.076  INFO 6784 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2019-02-17 16:12:42.185  INFO 6784 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-17 16:12:42.318  INFO 6784 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@971d0d8: startup date [Sun Feb 17 16:12:13 IST 2019]; root of context hierarchy
+2019-02-17 16:12:42.349  INFO 6784 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-17 16:12:42.365  INFO 6784 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-17 16:12:42.365  INFO 6784 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customizedResponseEntityExceptionHandler
+2019-02-17 16:12:42.381  INFO 6784 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-17 16:12:42.592  INFO 6784 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-17 16:12:42.607  INFO 6784 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-02-17 16:12:42.638  INFO 6784 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-02-17 16:12:42.638  INFO 6784 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-17 16:12:42.654  INFO 6784 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-17 16:12:42.701  INFO 6784 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-17 16:12:42.912  INFO 6784 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-02-17 16:12:42.912  INFO 6784 --- [main] com.bdc.bo.BusinessUnitApplication       : Started BusinessUnitApplication in 29.383 seconds (JVM running for 29.854)
+2019-02-17 16:15:23.698  INFO 6784 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-02-17 16:15:23.712  INFO 6784 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@971d0d8: startup date [Sun Feb 17 16:12:13 IST 2019]; root of context hierarchy
+2019-02-17 16:15:23.713  INFO 6784 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-02-17 16:15:23.713  INFO 6784 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2019-02-17 16:15:23.713  INFO 6784 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-02-17 16:15:23.713  INFO 6784 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-17 16:16:54.712  INFO 7300 --- [main] com.bdc.bo.BusinessUnitApplication       : Starting BusinessUnitApplication on aspirenav255 with PID 7300 (E:\BDC-BO-BusinessUnit\target\classes started by dhamotharan.murugan in E:\BDC-BO-BusinessUnit)
+2019-02-17 16:16:54.712  INFO 7300 --- [main] com.bdc.bo.BusinessUnitApplication       : No active profile set, falling back to default profiles: default
+2019-02-17 16:16:54.743  INFO 7300 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@971d0d8: startup date [Sun Feb 17 16:16:54 IST 2019]; root of context hierarchy
+2019-02-17 16:16:55.746  INFO 7300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4f8f580e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-17 16:16:55.963  INFO 7300 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-17 16:16:55.963  INFO 7300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-17 16:16:55.978  INFO 7300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-02-17 16:16:56.056  INFO 7300 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-17 16:16:56.056  INFO 7300 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1313 ms
+2019-02-17 16:16:56.244  INFO 7300 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-17 16:16:56.244  INFO 7300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2019-02-17 16:16:56.244  INFO 7300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-17 16:16:56.244  INFO 7300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-17 16:16:56.244  INFO 7300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-17 16:16:56.244  INFO 7300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-17 16:16:56.244  INFO 7300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-02-17 16:16:56.244  INFO 7300 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-02-17 16:17:15.119  INFO 7300 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-02-17 16:17:15.125  INFO 7300 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-17 16:17:15.156  INFO 7300 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-02-17 16:17:15.156  INFO 7300 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-17 16:17:15.156  INFO 7300 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-02-17 16:17:15.188  INFO 7300 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-17 16:17:15.278  INFO 7300 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-02-17 16:17:17.009  WARN 7300 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Unknown Id.generator: userSequenceGenerator
+2019-02-17 16:17:18.940  INFO 7300 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-02-17 16:17:18.944  INFO 7300 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-02-17 16:17:18.960 ERROR 7300 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Unknown Id.generator: userSequenceGenerator
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.bdc.bo.BusinessUnitApplication.main(BusinessUnitApplication.java:15) [classes/:na]
+Caused by: org.hibernate.AnnotationException: Unknown Id.generator: userSequenceGenerator
+	at org.hibernate.cfg.BinderHelper.makeIdGenerator(BinderHelper.java:664) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.processId(AnnotationBinder.java:2348) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2253) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:911) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:738) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:245) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:382) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336) ~[spring-orm-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 16 common frames omitted
+

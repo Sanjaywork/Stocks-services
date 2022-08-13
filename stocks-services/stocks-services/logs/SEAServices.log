@@ -1,0 +1,153 @@
+2019-10-03 12:04:50.482  INFO 8236 --- [restartedMain] com.aspiresys.sea.Application            : Starting Application on aspirenav431 with PID 8236 (D:\Projects\SEA\Code\Service\SEAServices\target\classes started by kaviraj.joseph in D:\Projects\SEA\Code\Service\SEAServices)
+2019-10-03 12:04:50.487  INFO 8236 --- [restartedMain] com.aspiresys.sea.Application            : No active profile set, falling back to default profiles: default
+2019-10-03 12:04:50.533  INFO 8236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 12:04:50.533  INFO 8236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 12:04:51.271  INFO 8236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-03 12:04:51.336  INFO 8236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 4 repository interfaces.
+2019-10-03 12:04:51.653  INFO 8236 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a1920ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-03 12:04:51.730  INFO 8236 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$c9996ddf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-03 12:04:52.032  INFO 8236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-03 12:04:52.046  INFO 8236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 12:04:52.046  INFO 8236 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-10-03 12:04:52.054  INFO 8236 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_77\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_77/bin/server;C:/Program Files/Java/jre1.8.0_77/bin;C:/Program Files/Java/jre1.8.0_77/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\ZipGenius 6\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;%JAVA_HOME%\bin;%CATALINA_HOME%\lib;C:\Program Files\EasyFrom Inc\;C:\Users\kaviraj.joseph\AppData\Local\Microsoft\WindowsApps;;C:\Windows\system32;;.]
+2019-10-03 12:04:52.159  INFO 8236 --- [restartedMain] o.a.c.c.C.[.[localhost].[/seaservices]   : Initializing Spring embedded WebApplicationContext
+2019-10-03 12:04:52.159  INFO 8236 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1626 ms
+2019-10-03 12:04:52.193  INFO 8236 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-10-03 12:04:52.197  INFO 8236 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-03 12:04:52.197  INFO 8236 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-03 12:04:52.197  INFO 8236 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2019-10-03 12:04:52.197  INFO 8236 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-03 12:04:52.312  INFO 8236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 12:04:52.313  WARN 8236 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-03 12:04:52.491  INFO 8236 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 12:04:52.535  INFO 8236 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-03 12:04:52.581  INFO 8236 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-03 12:04:52.582  INFO 8236 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-03 12:04:52.686  INFO 8236 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-03 12:04:52.780  INFO 8236 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-03 12:04:53.238  INFO 8236 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-03 12:04:53.763  WARN 8236 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-03 12:04:53.990  INFO 8236 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 12:04:54.032  INFO 8236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 12:04:54.225  INFO 8236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-10-03 12:04:54.238  INFO 8236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2019-10-03 12:04:54.245  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-10-03 12:04:54.248  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method authentication was common-controller
+2019-10-03 12:04:54.250  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: authentication belongs to groups: [[ResourceGroup{groupName='common-controller', position=0, controller=com.aspiresys.sea.controller.CommonController}]] 
+2019-10-03 12:04:54.251  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getAllCountries was common-controller
+2019-10-03 12:04:54.251  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getAllCountries belongs to groups: [[ResourceGroup{groupName='common-controller', position=0, controller=com.aspiresys.sea.controller.CommonController}]] 
+2019-10-03 12:04:54.251  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method saveOrUpdateDemoPocRequest was demo-poc-controller
+2019-10-03 12:04:54.251  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: saveOrUpdateDemoPocRequest belongs to groups: [[ResourceGroup{groupName='demo-poc-controller', position=0, controller=com.aspiresys.sea.controller.DemoPocController}]] 
+2019-10-03 12:04:54.252  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getDemoPocRequests was demo-poc-controller
+2019-10-03 12:04:54.252  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getDemoPocRequests belongs to groups: [[ResourceGroup{groupName='demo-poc-controller', position=0, controller=com.aspiresys.sea.controller.DemoPocController}]] 
+2019-10-03 12:04:54.252  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getAllProducts was common-controller
+2019-10-03 12:04:54.252  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getAllProducts belongs to groups: [[ResourceGroup{groupName='common-controller', position=0, controller=com.aspiresys.sea.controller.CommonController}]] 
+2019-10-03 12:04:54.253  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method saveOrUpdateRfpRequest was rfp-controller
+2019-10-03 12:04:54.253  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: saveOrUpdateRfpRequest belongs to groups: [[ResourceGroup{groupName='rfp-controller', position=0, controller=com.aspiresys.sea.controller.RfpController}]] 
+2019-10-03 12:04:54.253  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getRfpRequests was rfp-controller
+2019-10-03 12:04:54.253  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getRfpRequests belongs to groups: [[ResourceGroup{groupName='rfp-controller', position=0, controller=com.aspiresys.sea.controller.RfpController}]] 
+2019-10-03 12:04:54.253  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method searchResources was common-controller
+2019-10-03 12:04:54.253  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: searchResources belongs to groups: [[ResourceGroup{groupName='common-controller', position=0, controller=com.aspiresys.sea.controller.CommonController}]] 
+2019-10-03 12:04:54.256  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/common-controller Description: common-controller Position: 0
+2019-10-03 12:04:54.257  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/demo-poc-controller Description: demo-poc-controller Position: 0
+2019-10-03 12:04:54.257  INFO 8236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/rfp-controller Description: rfp-controller Position: 0
+2019-10-03 12:04:54.274  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.274  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.279  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.279  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.283  INFO 8236 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /authenticate.com.aspiresys.sea.controller.CommonController.authentication.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.283  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /authenticate.com.aspiresys.sea.controller.CommonController.authentication.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.296  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method authentication was common-controller
+2019-10-03 12:04:54.298  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method authentication was common-controller
+2019-10-03 12:04:54.304  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.304  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.304  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.304  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.304  INFO 8236 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /country.com.aspiresys.sea.controller.CommonController.getAllCountries.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.304  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /country.com.aspiresys.sea.controller.CommonController.getAllCountries.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.305  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getAllCountries was common-controller
+2019-10-03 12:04:54.306  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getAllCountries was common-controller
+2019-10-03 12:04:54.307  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.307  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.307  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.307  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.307  INFO 8236 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /products.com.aspiresys.sea.controller.CommonController.getAllProducts.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.307  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /products.com.aspiresys.sea.controller.CommonController.getAllProducts.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.308  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getAllProducts was common-controller
+2019-10-03 12:04:54.309  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getAllProducts was common-controller
+2019-10-03 12:04:54.310  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.310  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.310  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.310  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.310  INFO 8236 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /search/resources.com.aspiresys.sea.controller.CommonController.searchResources.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.310  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /search/resources.com.aspiresys.sea.controller.CommonController.searchResources.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.312  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method searchResources was common-controller
+2019-10-03 12:04:54.313  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method searchResources was common-controller
+2019-10-03 12:04:54.322  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.322  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.323  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.323  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.323  INFO 8236 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /demopocreqs.com.aspiresys.sea.controller.DemoPocController.getDemoPocRequests.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.323  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /demopocreqs.com.aspiresys.sea.controller.DemoPocController.getDemoPocRequests.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.324  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getDemoPocRequests was demo-poc-controller
+2019-10-03 12:04:54.325  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getDemoPocRequests was demo-poc-controller
+2019-10-03 12:04:54.326  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.aspiresys.sea.model.DemoPocModel(false)
+2019-10-03 12:04:54.327  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.aspiresys.sea.model.DemoPocModel(false)
+2019-10-03 12:04:54.328  INFO 8236 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.aspiresys.sea.model.DemoPocModel(false)
+2019-10-03 12:04:54.328  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.aspiresys.sea.model.DemoPocModel(false)
+2019-10-03 12:04:54.361  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.aspiresys.sea.model.DemoPocModel(false)
+2019-10-03 12:04:54.361  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.aspiresys.sea.model.DemoPocModel(false)
+2019-10-03 12:04:54.361  INFO 8236 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.aspiresys.sea.model.DemoPocModel(false)
+2019-10-03 12:04:54.361  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.aspiresys.sea.model.DemoPocModel(false)
+2019-10-03 12:04:54.362  INFO 8236 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.sql.Timestamp(false)
+2019-10-03 12:04:54.362  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.sql.Timestamp(false)
+2019-10-03 12:04:54.367  INFO 8236 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.sql.Timestamp(false)
+2019-10-03 12:04:54.367  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.sql.Timestamp(false)
+2019-10-03 12:04:54.368  INFO 8236 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.sql.Timestamp(false)
+2019-10-03 12:04:54.368  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.sql.Timestamp(false)
+2019-10-03 12:04:54.368  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.369  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.369  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.369  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.369  INFO 8236 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /demopoc/savereq.com.aspiresys.sea.controller.DemoPocController.saveOrUpdateDemoPocRequest.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.369  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /demopoc/savereq.com.aspiresys.sea.controller.DemoPocController.saveOrUpdateDemoPocRequest.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.371  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method saveOrUpdateDemoPocRequest was demo-poc-controller
+2019-10-03 12:04:54.371  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method saveOrUpdateDemoPocRequest was demo-poc-controller
+2019-10-03 12:04:54.373  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.373  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.373  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.373  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.373  INFO 8236 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /rfpreqs.com.aspiresys.sea.controller.RfpController.getRfpRequests.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.373  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /rfpreqs.com.aspiresys.sea.controller.RfpController.getRfpRequests.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.375  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getRfpRequests was rfp-controller
+2019-10-03 12:04:54.376  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getRfpRequests was rfp-controller
+2019-10-03 12:04:54.377  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.377  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.377  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.377  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+2019-10-03 12:04:54.377  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.aspiresys.sea.model.RfpModel(false)
+2019-10-03 12:04:54.377  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.aspiresys.sea.model.RfpModel(false)
+2019-10-03 12:04:54.378  INFO 8236 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.aspiresys.sea.model.RfpModel(false)
+2019-10-03 12:04:54.378  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.aspiresys.sea.model.RfpModel(false)
+2019-10-03 12:04:54.382  INFO 8236 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.aspiresys.sea.model.RfpModel(false)
+2019-10-03 12:04:54.382  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.aspiresys.sea.model.RfpModel(false)
+2019-10-03 12:04:54.382  INFO 8236 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.aspiresys.sea.model.RfpModel(false)
+2019-10-03 12:04:54.382  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.aspiresys.sea.model.RfpModel(false)
+2019-10-03 12:04:54.383  INFO 8236 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.sql.Timestamp(false)
+2019-10-03 12:04:54.383  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.sql.Timestamp(false)
+2019-10-03 12:04:54.383  INFO 8236 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.sql.Timestamp(false)
+2019-10-03 12:04:54.383  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.sql.Timestamp(false)
+2019-10-03 12:04:54.383  INFO 8236 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.sql.Timestamp(false)
+2019-10-03 12:04:54.384  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.sql.Timestamp(false)
+2019-10-03 12:04:54.384  INFO 8236 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /rfp/savereq.com.aspiresys.sea.controller.RfpController.saveOrUpdateRfpRequest.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.384  INFO 8236 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /rfp/savereq.com.aspiresys.sea.controller.RfpController.saveOrUpdateRfpRequest.DefaultGenericTypeNamingStrategy
+2019-10-03 12:04:54.385  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method saveOrUpdateRfpRequest was rfp-controller
+2019-10-03 12:04:54.386  INFO 8236 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method saveOrUpdateRfpRequest was rfp-controller
+2019-10-03 12:04:54.416  INFO 8236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/seaservices'
+2019-10-03 12:04:54.419  INFO 8236 --- [restartedMain] com.aspiresys.sea.Application            : Started Application in 4.174 seconds (JVM running for 4.872)
+2019-10-03 12:04:54.422  INFO 8236 --- [restartedMain] com.aspiresys.sea.Application            : ----------------Application Started----------
+2019-10-03 14:19:39.584  INFO 8236 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/seaservices]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 14:19:39.586  INFO 8236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 14:19:39.610  INFO 8236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms

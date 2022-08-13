@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "6c61bd64-6c26-42c0-8a78-e99acbab4eed",
+		"name": "STOCKS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Stock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"quarter\":\"1\",\r\n  \"stock\":\"AA\",\r\n  \"date\":\"1/14/2011\",\r\n  \"open\":\"$16.71\",\r\n  \"high\":\"$16.71\",\r\n  \"low\":\"$15.64\",\r\n  \"close\":\"$15.97\",\r\n  \"volume\":\"242963398\",\r\n  \"percentChangePrice\":\"-4.42849\",\r\n  \"percentChangeVolumeOverLastWk\":\"1.380223028\",\r\n  \"previousWeeksVolume\":\"239655616\",\r\n  \"nextWeeksOpen\":\"$16.19\",\r\n  \"nextWeeksClose\":\"$15.79\",\r\n  \"percentChangeNextWeeksPrice\":\"-2.47066\",\r\n  \"daysToNextDividend\":\"19\",\r\n  \"percentReturnNextDividend\":\"0.187852\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/stock-data/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stock-data",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stocks By Stock Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/stock-data/AA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stock-data",
+						"AA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bulk Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/kaviraj.joseph/Desktop/Stocks/stocks-api/stocks.data"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/stock-data/bulk-insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stock-data",
+						"bulk-insert"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
