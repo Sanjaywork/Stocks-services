@@ -32,10 +32,10 @@ public class StocksServiceImpl implements StocksService{
 	public Map<String,Object> saveOrUpdateStockData(StocksModel model) 
 	{
 		StocksEntity stocksEntity = null;
-		Map<String,Object> responseObject=null;
+		Map<String,Object> responseObject = null;
 		try 
 		{
-			responseObject=new HashMap<>();
+			responseObject = new HashMap<>();
 			
 			//Mapping Model to Entity
 			stocksEntity = ObjectMapperUtils.map(model, StocksEntity.class);
@@ -43,23 +43,17 @@ public class StocksServiceImpl implements StocksService{
 			//Calling Dao
 			stocksEntity = stocksDao.saveOrUpdateStockData(stocksEntity);
 			
-			if(stocksEntity==null)
+			if(stocksEntity == null)
 				throw new Exception(AppConstants.RESPONSE_SAVE_FAILIURE);
-				
-			
-			responseObject.put("reponseCode", AppConstants.RESPONSE_CODE_SUCCESS);
-			responseObject.put("reponseMsg", AppConstants.RESPONSE_SAVE_SUCCESS);
+
+			responseObject.put("responseCode", AppConstants.RESPONSE_CODE_SUCCESS);
+			responseObject.put("responseMsg", AppConstants.RESPONSE_SAVE_SUCCESS);
 			responseObject.put("data", ObjectMapperUtils.map(stocksEntity, StocksModel.class));
 
-		} catch (Exception exception) 
-		{
+		} catch (Exception exception) {
 			LOGGER.error(exception.getMessage());
-			responseObject.put("reponseCode", AppConstants.RESPONSE_CODE_FAILURE);
-			responseObject.put("reponseMsg", AppConstants.RESPONSE_SAVE_FAILIURE);
-		} finally
-		{
-			stocksEntity = null;
-			model = null;
+			responseObject.put("responseCode", AppConstants.RESPONSE_CODE_FAILURE);
+			responseObject.put("responseMsg", AppConstants.RESPONSE_SAVE_FAILIURE);
 		}
 		return responseObject;
 	}
@@ -77,19 +71,22 @@ public class StocksServiceImpl implements StocksService{
 			
 			//Calling Dao
 			stocksEntityList=stocksDao.findByStock(stock);
-			
-			if (!CollectionUtils.isEmpty(stocksEntityList)) 
+
+			if (stocksEntityList == null) {
+				throw new Exception(AppConstants.RESPONSE_FAILURE_MSG);
+			}
+			if(!CollectionUtils.isEmpty(stocksEntityList))
 				stockModelList = ObjectMapperUtils.mapAll(stocksEntityList, StocksModel.class);	//Mapping Entity to Model
 			
-			responseObject.put("reponseCode", AppConstants.RESPONSE_CODE_SUCCESS);
-			responseObject.put("reponseMsg", AppConstants.RESPONSE_SUCCESS_MSG);
+			responseObject.put("responseCode", AppConstants.RESPONSE_CODE_SUCCESS);
+			responseObject.put("responseMsg", AppConstants.RESPONSE_SUCCESS_MSG);
 			responseObject.put("stocks", stockModelList);
 			
 		}catch (Exception exception) {
 			LOGGER.error(exception.getMessage());
 			
-			responseObject.put("reponseCode", AppConstants.RESPONSE_CODE_FAILURE);
-			responseObject.put("reponseMsg", exception.getMessage());
+			responseObject.put("responseCode", AppConstants.RESPONSE_CODE_FAILURE);
+			responseObject.put("responseMsg", exception.getMessage());
 		} finally {
 			stocksEntityList = null;
 		}
@@ -114,14 +111,14 @@ public class StocksServiceImpl implements StocksService{
 			stocksDao.batchInsert(fileName);
 			file1.delete();
 			
-			responseObject.put("reponseCode", AppConstants.RESPONSE_CODE_SUCCESS);
-			responseObject.put("reponseMsg", AppConstants.RESPONSE_SUCCESS_MSG);
+			responseObject.put("responseCode", AppConstants.RESPONSE_CODE_SUCCESS);
+			responseObject.put("responseMsg", AppConstants.RESPONSE_SUCCESS_MSG);
 			
 		} catch (Exception e) 
 		{
 			LOGGER.error(e.getMessage());
-			responseObject.put("reponseCode", AppConstants.RESPONSE_CODE_FAILURE);
-			responseObject.put("reponseMsg", e.getMessage());
+			responseObject.put("responseCode", AppConstants.RESPONSE_CODE_FAILURE);
+			responseObject.put("responseMsg", e.getMessage());
 		}
 		return responseObject;
 	}
