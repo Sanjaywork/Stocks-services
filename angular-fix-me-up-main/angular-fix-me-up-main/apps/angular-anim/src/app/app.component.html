@@ -1,0 +1,15 @@
+<!-- TODO: 3. Use Semantic HTML properly, not just this compofullnent -->
+<!-- TODO: 4. Our header and footer are suppose to fill the  width of the page -->
+<html>
+<body>
+<main>
+  <pre-header [userName]="userName$"></pre-header>
+  <section>
+    <pre-side-nav [sideNavItems]="sideNavItems"></pre-side-nav>
+    <router-outlet></router-outlet>
+  </section>
+  <br>
+  <pre-footer></pre-footer>
+</main>
+</body>
+</html>

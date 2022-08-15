@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/shared/presentational/src",
+  "prefix": "pre",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/presentational"],
+      "options": {
+        "jestConfig": "libs/shared/presentational/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/presentational/**/*.ts",
+          "libs/shared/presentational/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

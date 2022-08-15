@@ -1,0 +1,22 @@
+@use "theme";
+
+section {
+  height: 40px;
+  background: theme.$brand-bg-alt;
+  color: white;
+  padding-right: theme.$brand-padding;
+  padding-left: theme.$brand-padding;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// TODO: 12. The Last Link is only suppose to be offset from the side of the screen
+// by 20px, what can we do to fix this
+.nav-offsite {
+  a {
+    // TODO: 13. something's off with this include
+    // @include link();
+    color: white;
+  }
+}

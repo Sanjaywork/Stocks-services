@@ -1,0 +1,11 @@
+// TODO: 5. Fixing one thing may break other things, but sometimes it has to be done
+main {
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+body {
+  width: 100%;
+}

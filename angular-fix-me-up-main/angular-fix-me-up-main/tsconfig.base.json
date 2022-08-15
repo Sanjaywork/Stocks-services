@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@angular-anim/feature/account-summary": [
+        "libs/feature/account-summary/src/index.ts"
+      ],
+      "@angular-anim/shared/models": ["libs/shared/models/src/index.ts"],
+      "@angular-anim/shared/presentational": [
+        "libs/shared/presentational/src/index.ts"
+      ],
+      "@angular-anim/shared/services": ["libs/shared/services/src/index.ts"],
+      "@angular-anim/shared/store": ["libs/shared/store/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

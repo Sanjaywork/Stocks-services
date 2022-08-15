@@ -1,0 +1,14 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/shared/models/src",
+  "prefix": "angular-anim",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/shared/models/**/*.ts"]
+      }
+    }
+  },
+  "tags": ["models"]
+}

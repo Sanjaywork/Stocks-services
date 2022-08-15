@@ -1,0 +1,8 @@
+@use './variables' as v;
+
+@mixin link() {
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: v.$brand-padding;
+  padding-right: v.$brand-padding;
+}
